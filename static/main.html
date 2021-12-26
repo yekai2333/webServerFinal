@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ECharts-ajax动态赋值</title>
+<!--    <link rel="stylesheet" href="layui/css/layui.css">-->
+<!--    <link rel="stylesheet" href="main.css">-->
+    <link rel="stylesheet" href="{{ url_for('static',filename='layui/css/layui.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='main.css') }}">
+<!--    <script src="js/echarts.common.min.js"></script>-->
+<!--    <script src="js/echartsOne.js"></script>-->
+<!--    <script src="js/contest1.js"></script>-->
+<!--    <script src="js/contest3.js"></script>-->
+
+    <script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/echartsOne.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/contest1.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/contest3.js') }}"></script>
+
+
+    <style>
+        #t1 #main {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+        }
+        .t {
+            font-size: 25px;
+        }
+
+        #table1Container {
+            margin-top: 10%;
+            margin-left: 15%;
+        }
+
+        #table2Container {
+            margin-top: 10px;
+            margin-left: 2%;
+        }
+
+        #table3Container {
+            margin-top: 10px;
+            margin-left: 10%;
+        }
+    </style>
+</head>
+
+<body>
+<script type="text/javascript">
+    $(function () {
+        //在这就行
+        qxfl('#qxfl');
+        fill('');
+        fill2();
+        fill3();
+
+    });
+</script>
+    <div id="panels">
+<!--        导航页-->
+        <section id="guide">
+            <div id="logo"></div>
+
+
+            <div id="testButtonGroup" class="layui-btn-group">
+                <button type="button" id="page1Button" class="testButton layui-btn layui-btn-normal ">
+                    <div>
+                        <div><i class="layui-icon layui-icon-video" style="font-size:50px;color:white"></i></div>
+                        <div><h1>文件统计分析</h1><p>任务一</p></div>
+                    </div>
+                </button>
+                <button type="button" id="test2Button" class="testButton layui-btn layui-btn-normal ">
+                    <div>
+                        <div><i class="layui-icon layui-icon-layer" style="font-size:50px; color:white"></i></div>
+                        <div><h1>历史日志分析</h1><p>任务二</p></div>
+                    </div>
+                </button>
+                <button type="button" id="test3Button" class="testButton layui-btn layui-btn-normal ">
+                    <div>
+                        <div><i class="layui-icon layui-icon-website" style="font-size:50px; color:white"></i></div>
+                        <div><h1>页面访问统计</h1><p>任务三</p></div>
+                    </div>
+                </button>
+
+            </div>
+        </section>
+
+        <section id="carousel" >
+
+            <div id="t1" style="width: 100vw;height:100vh">
+                <h class="t">文件统计分析</h>
+                <div style="overflow-x: auto; overflow-y: auto; height: 80%; width:30%;" id="table1Container">
+                    <table border="1" id="table1" style="width: 100%">
+                        <tr>
+                            <td>文件名称</td>
+                            <td>文件大小(kb)</td>
+                            <td>文件数量</td>
+                        </tr>
+
+
+                    </table>
+                </div>
+                <div id="main" style="width: 600px;height:400px;"></div>
+            </div>
+            <a id="toTop3" style="color:#055B95">↑</a>
+
+        </section>
+
+        <section id="page1">
+            <div id="t2" style="width: 100vw;height: 100vh">
+                <h class="t">历史日志分析</h>
+                <div style="overflow-x: auto; overflow-y: auto; height: 80%; width:90%;" id="table2Container">
+                    <div><span>9月</span></div>
+                    <table border="1" id="table2" style="width: 100%">
+                        <tr>
+                            <td>日志名称</td>
+                            <td>日期</td>
+                            <td>总条数</td>
+                            <td>错误条数</td>
+                        </tr>
+                    </table>
+
+                    <div><span>10月</span></div>
+                    <table border="1" id="table4" style="width: 100%">
+                        <tr>
+                            <td>日志名称</td>
+                            <td>日期</td>
+                            <td>总条数</td>
+                            <td>错误条数</td>
+                        </tr>
+                    </table>
+                    <div><span>11月</span></div>
+                    <table border="1" id="table5" style="width: 100%">
+                        <tr>
+                            <td>日志名称</td>
+                            <td>日期</td>
+                            <td>总条数</td>
+                            <td>错误条数</td>
+                        </tr>
+                    </table>
+                    <div><span>12月</span></div>
+                    <table border="1" id="table6" style="width: 100%">
+                        <tr>
+                            <td>日志名称</td>
+                            <td>日期</td>
+                            <td>总条数</td>
+                            <td>错误条数</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <a id="toTop2" style="color:#055B95">↑</a>
+        </section>
+
+        <section id="page2">
+            <div id="t3" style="width: 100vw;height: 100vh">
+                <h class="t">页面访问统计</h>
+                <div style="overflow-x: auto; overflow-y: auto; height: 80%; width:70%;" id="table3Container">
+                    <table border="1" id="table3" style="width: 100%">
+                        <tr>
+                            <td>日期</td>
+                            <td>访问数量最多的页面</td>
+                            <td>访问次数</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <a id="toTop"  style="color:#055B95">↑</a>
+        </section>
+
+
+    </div>
+<!--    <script src="jquery.js"></script>-->
+<!--    <script src="layui/layui.js"></script>-->
+<!--    <script src="main.js"></script>-->
+
+<script src="{{ url_for('static',filename='jquery.js') }}"></script>
+<script src="{{ url_for('static',filename='layui/layui.js') }}"></script>
+<script src="{{ url_for('static',filename='main.js') }}"></script>
+
+</body>
+</html>

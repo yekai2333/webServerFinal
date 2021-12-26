@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts-ajax动态赋值</title>
+    <!-- 引入 echarts.js -->
+    <script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/echarts.common.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/echartsOne.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/contest1.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/contest3.js') }}"></script>
+        <style>
+        #t1 #main{
+            position: absolute;
+            top:0%;
+            left:50%;
+
+        }
+        .t{
+            font-size: 25px;
+        }
+
+        #table1Container{
+            margin-top: 20px;
+            margin-left: 15%;
+        }
+        #table2Container{
+            margin-top: 10px;
+            margin-left: 2%;
+        }
+
+          #table3Container{
+            margin-top: 10px;
+            margin-left: 10%;
+        }
+    </style>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+<!--    <h3>-->
+<!--    	<button id="qxfl" data-index="1">第一个echarts</button>-->
+<!--    	<button id="gfzr" data-index="2">第二个echarts</button>-->
+<!--    </h3>-->
+
+
+
+    <script type="text/javascript">
+	  	$(function(){
+	  		//在这就行
+			qxfl('#qxfl');
+            fill('');
+            fill2();
+            fill3();
+
+	  	});
+    </script>
+	<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+<div id="t1" style="width: 100vw;height:55vh">
+    <h class="t">文件统计分析</h>
+    <div style="overflow-x: auto; overflow-y: auto; height: 80%; width:30%;" id="table1Container">
+        <table border="1" id="table1" style="width: 100%">
+            <tr>
+                <td>文件名称</td>
+                <td>文件大小(kb)</td>
+                <td>文件数量</td>
+            </tr>
+
+
+        </table>
+    </div>
+    <div id="main" style="width: 600px;height:400px;"></div>
+</div>
+<hr>
+<div id="t2" style="width: 100vw;height: 40vh">
+    <h class="t">历史日志分析</h>
+    <div style="overflow-x: auto; overflow-y: auto; height: 80%; width:90%;" id="table2Container">
+        <div><span>9月</span></div>
+        <table border="1" id="table2" style="width: 100%">
+            <tr>
+                <td>日志名称</td>
+                <td>日期</td>
+                <td>总条数</td>
+                <td>错误条数</td>
+            </tr>
+        </table>
+
+                <div><span>10月</span></div>
+        <table border="1" id="table4" style="width: 100%">
+            <tr>
+                <td>日志名称</td>
+                <td>日期</td>
+                <td>总条数</td>
+                <td>错误条数</td>
+            </tr>
+        </table>
+                 <div><span>11月</span></div>
+        <table border="1" id="table5" style="width: 100%">
+            <tr>
+                <td>日志名称</td>
+                <td>日期</td>
+                <td>总条数</td>
+                <td>错误条数</td>
+            </tr>
+        </table>
+                        <div><span>12月</span></div>
+        <table border="1" id="table6" style="width: 100%">
+            <tr>
+                <td>日志名称</td>
+                <td>日期</td>
+                <td>总条数</td>
+                <td>错误条数</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<hr>
+<div id="t3" style="width: 100vw;height: 30vh">
+    <h class="t">页面访问统计</h>
+    <div style="overflow-x: auto; overflow-y: auto; height: 80%; width:70%;" id="table3Container">
+    <table border="1" id="table3" style="width: 100%">
+        <tr>
+            <td>日期</td>
+            <td>访问数量最多的页面</td>
+            <td>访问次数</td>
+        </tr>
+    </table>
+    </div>
+</div>
+
+</body>
+</html>

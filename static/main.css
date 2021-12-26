@@ -1,0 +1,458 @@
+html,body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+#panels{
+    width:100%;
+    height:100%;
+}
+#guide{
+    position:relative;
+    width:100%;
+    height:100%;
+    background-color: #F0F0F0;
+    background-image:url("img/background.png") ;
+    background-size:100% auto;
+    background-position: 0 -15vh;
+}
+#carousel{
+    position:relative;
+    width:100%;
+    height:100%;
+    background-color: #F0F0F0;
+}
+#page1{
+    position:relative;
+    width:100%;
+    height:100%;
+    background-color:#f8f8f8;
+}
+#page2{
+    position:relative;
+    width:100%;
+    height:100%;
+    background-color: #f8f8f8;
+}
+#page3{
+    position: relative;
+    width:100%;
+    height:100%;
+    background-color: #f8f8f8;
+}
+
+#testButtonGroup{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:12%;
+}
+.testButton{
+    width:33.3%;
+    height:100%;
+    background-color: #055B95;
+}
+.testButton>div{
+    display: flex;
+}
+.testButton>div>div{
+    flex:2;
+}
+.testButton>div>div:nth-child(1){
+    flex:1;
+    padding: 5% 5% 0 0;
+    text-align: right;
+}
+
+
+.testButton>div>div h1{
+    text-align:left;
+}
+.testButton>div>div p{
+    text-align:left;
+}
+
+#homeNav{
+    /*background-color: rgba(161,168,183,0.5);*/
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 6px;
+    position:absolute;
+    top:3%;
+    right:0;
+    width:65%;
+    height:8%;
+}
+#homeNav li{
+    line-height: 8vh;
+    list-style: none;
+    float:left;
+    width:18%;
+    height:100%;
+    text-align:center;
+    font-size:1.5vw;
+    /*margin:0 1% 0 1%;*/
+    cursor:pointer;
+    color:#055B95;
+}
+#homeNav li:nth-child(1){
+    margin:0;
+}
+#homeNav li:nth-child(2){
+    margin:0;
+}
+#homeNav li:nth-child(3){
+    margin:0 2% 0 2%;
+}
+#homeNav li:nth-child(4){
+    margin:0 2% 0 2%;
+}
+#homeNav li:nth-child(5){
+    margin:0;
+}
+
+
+#dropMenu1{
+    display: none;
+    position:absolute;
+    top:120%;
+    right:15%;
+    background-color: #055B95;
+    border-radius: 30px;
+    width:30%;
+    height:400%;
+}
+#dropMenu1 div{
+    padding-top:5%;
+    color:#fff;
+}
+#dropMenu1 div:hover{
+    padding-top:5%;
+    color:#000;
+}
+#dropMenu2{
+    display: none;
+    position:absolute;
+    top:120%;
+    right:0;
+    background-color: #055B95;
+    border-radius: 30px;
+    width:20%;
+    height:300%;
+}
+#dropMenu2 div{
+    padding-top:5%;
+    color:#fff;
+}
+#dropMenu2 div:hover{
+    padding-top:5%;
+    color:#000;
+}
+#dropMenu0{
+    display: none;
+    position:absolute;
+    top:350%;
+    left:-5%;
+    background-color: #f0f0f0;
+    border-radius: 30px;
+    width:50%;
+    height:400%;
+}
+#dropMenu0>p:nth-child(1){
+    margin-top: 5%;
+}
+
+#logo{
+    position: absolute;
+    top:3%;
+    left:5%;
+    width:14%;
+    height:10%;
+
+    background-size: 100%;
+}
+
+
+#carouselContainer{
+    top:15%;
+    width:100%;
+}
+#carouselItem{
+    width:100%;
+}
+#carouselContainer .carouselPage{
+    width:100%;
+}
+
+#carouselContainer .carouselRow{
+    background-color: #fff;
+    width:100%;
+    height:50%;
+    display: flex;
+    justify-content:space-around;
+
+}
+#carouselContainer .carouselRow a{
+    margin:auto 0;
+    height:75%;
+    width:auto;
+}
+#carouselContainer .carouselRow img{
+    height:85%;
+    width:auto;
+}
+#carouselContainer .carouselRow p{
+    background-color:  #F0F0F0;
+    height:15%;
+    width:auto;
+    text-align: center;
+    font-size: 1vw;
+}
+
+#carouselTitle{
+    position:absolute;
+    left:38%;
+    top:5%;
+    font-size:1.8vw;
+    letter-spacing: 0.2vw;
+    color: #3B6978;
+}
+#page1Title{
+    position:absolute;
+    left:38%;
+    top:2%;
+    font-size:1.8vw;
+    letter-spacing: 0.2vw;
+    color: #3B6978;
+}
+#page1Pics{
+    position: absolute;
+    left:0;
+    top:10%;
+    width:100%;
+    height:70%;
+    display: flex;
+    justify-content:space-around;
+}
+#page1Pics .picFrame{
+    position:relative;
+    background-color: #fff;
+    height:100%;
+    width:38%;
+    border:1px solid #707070;
+    border-radius: 12px;
+    overflow: hidden;
+}
+#page1Pics .picFrame .pic{
+    height:80%;
+    width:100%;
+    overflow: hidden;
+    top:0;
+    left:0;
+    cursor: pointer;
+}
+#page1Pics .picFrame:nth-child(1) .pic img{
+    height:auto;
+    width:100%;
+    margin-top: -25vh;
+}
+#page1Pics .picFrame:nth-child(2) .pic img{
+    height:auto;
+    width:100%;
+    margin-top: -15vh;
+}
+
+#page1Pics .picFrame .words h1{
+   text-align: center;
+    line-height: 6vh;
+    font-size: 1.5vw;
+    color:#3B6978;
+}
+#page1Pics .picFrame .words p{
+    text-align: center;
+    line-height: 3vh;
+    font-size: 1vw;
+    color:#3B6978;
+}
+
+#page1links{
+    position:absolute;
+    left:0;
+    top:80%;
+    width:100%;
+    height:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page1links>div{
+    background-color: #fff;
+    width:22%;
+    height:50%;
+    border:1px solid #707070;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+#page1links>div>div>p {
+    text-align: left;
+    font-size: 2vw;
+    margin-left: 1vw;
+    color: #3B6978;
+}
+
+#page1links>div>div:nth-child(1){
+    height:65%;
+    width:auto;
+}
+
+#page1links>div>div>img{
+    height:100%;
+}
+
+#page2Title{
+    position:absolute;
+    left:42%;
+    top:2%;
+    font-size:1.8vw;
+    letter-spacing: 0.2vw;
+    color: #3B6978;
+}
+#page2Content{
+    position: absolute;
+    left:0;
+    top:13%;
+    width:100%;
+    height:80%;
+}
+#page2Pic{
+    position: relative;
+    width: 60%;
+    height: 100%;
+    float: right;
+    background-image: url("../images/page2Pic.PNG");
+    background-size: 100% auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#knowMore{
+    position: absolute;
+    left:-45%;
+    top:70%;
+    font-size: 1.1vw;
+}
+#knowMore span{
+    color:blue;
+    font-size: 1.8vw;
+}
+#page2Card{
+    position: absolute;
+    left:-50%;
+    top:14%;
+    background-color: #fff;
+    width:65%;
+    height:68%;
+    border-radius: 10px;
+    border:1px solid #707070;
+    display: flex;
+    overflow:hidden;
+}
+#page2Card h1{
+    margin-top: 20%;
+    margin-left: 6%;
+}
+#page2Card a{
+    margin-top:8%;
+    margin-left: 6%;
+}
+#staffs{
+    position: absolute;
+    top:0;
+    width:0;
+    width:100%;
+    height:85%;
+    background-image: url("../images/end.png");
+    background-size: 100% auto;
+    background-position: 0 -10vh;
+}
+#staffs .row1{
+    height:50%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+#staffs .row1 div{
+    width:30%;
+    height:100%;
+}
+#staffs .row1 div h1{
+    margin-top: 6vh;
+    text-align: center;
+    font-size: 1.5vw;
+    color: #fff;
+}
+#staffs .row1 div p{
+    text-align: center;
+    font-size: 1vw;
+    color: #fff;
+}
+#staffs .row2{
+    height:50%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+#staffs .row2 div{
+
+    width:30%;
+    height:100%;
+    padding-top: 5vh;
+}
+#staffs .row2 div p{
+    text-align: center;
+    font-size: 1vw;
+    color: #fff;
+}
+#toTop{
+    text-align: center;
+    font-size: 3vw;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    cursor: pointer;
+}
+#toTop2{
+    text-align: center;
+    font-size: 3vw;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    cursor: pointer;
+}
+#toTop3{
+    text-align: center;
+    font-size: 3vw;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    cursor: pointer;
+}
+
+#theEnd{
+    position: absolute;
+    top:85%;
+    width:0;
+    width:100%;
+    height:15%;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    background-position: 50% 50%;
+}

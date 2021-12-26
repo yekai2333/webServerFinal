@@ -1,0 +1,196 @@
+{
+  "data": [
+    {
+      "date": "Dec 25",
+      "errors": 3,
+      "lines": 155,
+      "name": "boot.log"
+    },
+    {
+      "date": "Dec 26",
+      "errors": 0,
+      "lines": 75,
+      "name": "btmp"
+    },
+    {
+      "date": "Dec 1",
+      "errors": 0,
+      "lines": 95,
+      "name": "btmp-20211201"
+    },
+    {
+      "date": "Dec 25",
+      "errors": 10,
+      "lines": 1028,
+      "name": "cloud-init.log"
+    },
+    {
+      "date": "Dec 26",
+      "errors": 0,
+      "lines": 6022,
+      "name": "cron"
+    },
+    {
+      "date": "Nov 28",
+      "errors": 0,
+      "lines": 4855,
+      "name": "cron-20211128"
+    },
+    {
+      "date": "Dec 5",
+      "errors": 0,
+      "lines": 5687,
+      "name": "cron-20211205"
+    },
+    {
+      "date": "Dec 13",
+      "errors": 0,
+      "lines": 6488,
+      "name": "cron-20211213"
+    },
+    {
+      "date": "Dec 19",
+      "errors": 0,
+      "lines": 4857,
+      "name": "cron-20211219"
+    },
+    {
+      "date": "Dec 25",
+      "errors": 2,
+      "lines": 499,
+      "name": "dmesg"
+    },
+    {
+      "date": "Dec 25",
+      "errors": 2,
+      "lines": 502,
+      "name": "dmesg.old"
+    },
+    {
+      "date": "Dec 25",
+      "errors": 0,
+      "lines": 15,
+      "name": "ecs_network_optimization.log"
+    },
+    {
+      "date": "Dec 26",
+      "errors": 0,
+      "lines": 3,
+      "name": "firewalld"
+    },
+    {
+      "date": "Dec 26",
+      "errors": 0,
+      "lines": 0,
+      "name": "lastlog"
+    },
+    {
+      "date": "Dec 26",
+      "errors": 1081,
+      "lines": 1081,
+      "name": "maillog"
+    },
+    {
+      "date": "Nov 28",
+      "errors": 868,
+      "lines": 868,
+      "name": "maillog-20211128"
+    },
+    {
+      "date": "Dec 5",
+      "errors": 1018,
+      "lines": 1018,
+      "name": "maillog-20211205"
+    },
+    {
+      "date": "Dec 13",
+      "errors": 1159,
+      "lines": 1159,
+      "name": "maillog-20211213"
+    },
+    {
+      "date": "Dec 19",
+      "errors": 869,
+      "lines": 869,
+      "name": "maillog-20211219"
+    },
+    {
+      "date": "Dec 26",
+      "errors": 1109,
+      "lines": 9472,
+      "name": "messages"
+    },
+    {
+      "date": "Nov 28",
+      "errors": 863,
+      "lines": 6389,
+      "name": "messages-20211128"
+    },
+    {
+      "date": "Dec 5",
+      "errors": 1011,
+      "lines": 7457,
+      "name": "messages-20211205"
+    },
+    {
+      "date": "Dec 13",
+      "errors": 1151,
+      "lines": 8486,
+      "name": "messages-20211213"
+    },
+    {
+      "date": "Dec 19",
+      "errors": 863,
+      "lines": 6384,
+      "name": "messages-20211219"
+    },
+    {
+      "date": "Dec 25",
+      "errors": 0,
+      "lines": 40,
+      "name": "ntp.log"
+    },
+    {
+      "date": "Dec 26",
+      "errors": 1661,
+      "lines": 4865,
+      "name": "secure"
+    },
+    {
+      "date": "Nov 28",
+      "errors": 2067,
+      "lines": 4950,
+      "name": "secure-20211128"
+    },
+    {
+      "date": "Dec 5",
+      "errors": 1968,
+      "lines": 5123,
+      "name": "secure-20211205"
+    },
+    {
+      "date": "Dec 13",
+      "errors": 2261,
+      "lines": 5894,
+      "name": "secure-20211213"
+    },
+    {
+      "date": "Dec 19",
+      "errors": 1289,
+      "lines": 3783,
+      "name": "secure-20211219"
+    },
+    {
+      "date": "Dec 26",
+      "errors": 0,
+      "lines": 5,
+      "name": "wtmp"
+    },
+    {
+      "date": "Dec 25",
+      "errors": 1,
+      "lines": 69,
+      "name": "yum.log"
+    }
+  ]
+}
